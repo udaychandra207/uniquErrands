@@ -10,27 +10,40 @@
 html,body{height:100%;font-family:'Inter',sans-serif;}
 body{background:#121212;color:#e0e0e0;transition:all 0.6s;}
 #particles-js{position:fixed;width:100%;height:100%;z-index:-1;top:0;left:0;}
-header{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:70px 20px;background:rgba(0,0,0,0.6);backdrop-filter:blur(14px);}
+header{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:70px 20px;
+background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+url('https://upload.wikimedia.org/wikipedia/commons/8/8e/Highrise_apartments_in_Hyderabad.jpg');
+background-size:cover;background-position:center;backdrop-filter:blur(14px);}
 header img{width:150px;margin-bottom:20px;}
-header h1{font-family:'Playfair Display',serif;font-size:3.2rem;letter-spacing:2px;background:linear-gradient(90deg,#ffcc70,#ff7e5f);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-shadow:0 2px 8px rgba(255,204,112,0.3);}
+header h1{font-family:'Playfair Display',serif;font-size:3.2rem;letter-spacing:2px;
+background:linear-gradient(90deg,#ffcc70,#ff7e5f);-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;text-shadow:0 2px 8px rgba(255,204,112,0.3);}
 header p{font-size:1.2rem;color:#ccc;}
-.toggle{position:fixed;top:20px;right:20px;padding:8px 18px;background:#ffcc70;color:#121212;border:none;border-radius:30px;cursor:pointer;z-index:2;transition:all 0.4s;}
-.offer-bar{background:linear-gradient(90deg,#ffcc70,#ff7e5f);color:#121212;text-align:center;padding:12px;font-weight:600;}
-nav{display:flex;justify-content:center;gap:50px;background:rgba(0,0,0,0.5);backdrop-filter:blur(8px);padding:18px 0;box-shadow:0 2px 10px rgba(0,0,0,0.3);}
+.toggle{position:fixed;top:20px;right:20px;padding:8px 18px;background:#ffcc70;
+color:#121212;border:none;border-radius:30px;cursor:pointer;z-index:2;transition:all 0.4s;}
+.offer-bar{background:linear-gradient(90deg,#ffcc70,#ff7e5f);color:#121212;text-align:center;
+padding:12px;font-weight:600;}
+nav{display:flex;justify-content:center;gap:50px;background:rgba(0,0,0,0.5);
+backdrop-filter:blur(8px);padding:18px 0;box-shadow:0 2px 10px rgba(0,0,0,0.3);}
 nav a{color:#e0e0e0;text-decoration:none;font-size:1rem;transition:color 0.4s;}
 nav a:hover{color:#ffcc70;}
 section{padding:60px 20px;}
 .services{display:flex;flex-wrap:wrap;justify-content:center;gap:40px;}
-.card{width:300px;height:400px;background-size:cover;background-position:center;border-radius:20px;overflow:hidden;position:relative;box-shadow:0 10px 40px rgba(0,0,0,0.6);transition:transform 0.4s,border 0.4s;}
+.card{width:300px;height:400px;background-size:cover;background-position:center;border-radius:20px;
+overflow:hidden;position:relative;box-shadow:0 10px 40px rgba(0,0,0,0.6);
+transition:transform 0.4s,border 0.4s;}
 .card:hover{transform:scale(1.06);border:2px solid #ffcc70;}
-.card::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.4);transition:background 0.3s;}
+.card::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;
+background:rgba(0,0,0,0.4);transition:background 0.3s;}
 .card:hover::after{background:rgba(0,0,0,0.2);}
 .card-text{position:absolute;bottom:25px;left:25px;color:#fff;z-index:1;}
 .about,.contact{max-width:900px;margin:0 auto;text-align:center;}
 .about p,.contact p{margin-top:18px;color:#ccc;line-height:1.8;}
-footer{text-align:center;padding:35px;background:rgba(0,0,0,0.5);backdrop-filter:blur(6px);font-size:0.95rem;color:#bbb;}
+footer{text-align:center;padding:35px;background:rgba(0,0,0,0.5);
+backdrop-filter:blur(6px);font-size:0.95rem;color:#bbb;}
 .light body{background:#fdf9f3;color:#121212;}
-.light nav,.light footer,.light header,.light .offer-bar{background:rgba(255,255,255,0.6);backdrop-filter:blur(8px);}
+.light nav,.light footer,.light header,.light .offer-bar{background:rgba(255,255,255,0.6);
+backdrop-filter:blur(8px);}
 .light nav a{color:#121212;}
 .light nav a:hover{color:#ff7e5f;}
 .light .card::after{background:rgba(255,255,255,0.4);}
@@ -59,16 +72,16 @@ footer{text-align:center;padding:35px;background:rgba(0,0,0,0.5);backdrop-filter
 </nav>
 
 <section id="services" class="services">
-  <div class="card" style="background-image:url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...')">
+  <div class="card" style="background-image:url('https://source.unsplash.com/400x600/?maid,cleaning')">
     <div class="card-text"><h3>Maid Services</h3><p>Daily upkeep, spotless shine.</p></div>
   </div>
-  <div class="card" style="background-image:url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...')">
+  <div class="card" style="background-image:url('https://source.unsplash.com/400x600/?deep-clean,interior')">
     <div class="card-text"><h3>Deep Cleaning</h3><p>Eliminate hidden dust & grime.</p></div>
   </div>
-  <div class="card" style="background-image:url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...')">
+  <div class="card" style="background-image:url('https://source.unsplash.com/400x600/?window,glass')">
     <div class="card-text"><h3>Window Care</h3><p>Let sunlight sparkle in.</p></div>
   </div>
-  <div class="card" style="background-image:url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...')">
+  <div class="card" style="background-image:url('https://source.unsplash.com/400x600/?luxury,polish')">
     <div class="card-text"><h3>Special Shine</h3><p>Luxury polish on key surfaces.</p></div>
   </div>
 </section>
